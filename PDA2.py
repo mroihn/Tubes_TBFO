@@ -33,7 +33,7 @@ class PDA:
                     for stack_symbol in action[1][::-1]:
                         self.stack.append(stack_symbol)
                 current_state = action[0]
-                # print(current_state)
+                print(current_state)
                 # self.stack.pop()
             else:
                 return False
@@ -52,36 +52,16 @@ def main():
     initial_stack_symbol = 'Z'
     transitions = {
         # HTML
-        ('qhtml', 'KURUNG_V_BUKA', 'Z'): ('qhtml', ('X', 'Z')),
-        ('qhtml', 'HTML', 'X'): ('qhtml', 'X'),
-        ('qhtml', 'KURUNG_V_TUTUP', 'X'): ('qhtml', 'epsilon'),
-        ('qhtml', 'ENTER', 'X'): ('qhtml', 'X'),
-        ('qhtml', 'ENTER', 'Z'): ('qhtml', 'Z'),
-        ('qhtml', 'GARIS_MIRING', 'X'): ('qhtml', 'X'),
+        ('qhtml', 'HTML_OPEN', 'Z'): ('qhtml', ('X', 'Z')),
+        ('qhtml', 'HEAD_OPEN', 'X'): ('qhtml', ('Y', 'X')),
+        ('qhtml', 'BODY_OPEN', 'Y'): ('qhtml', ('P', 'Y')),
+        ('qhtml', 'HEAD_CLOSE', 'Y'): ('qhtml', 'epsilon'),
+        ('qhtml', 'HTML_CLOSE', 'X'): ('qhtml', 'epsilon'),
+        ('qhtml', 'BODY_CLOSE', 'Y'): ('qhtml', 'epsilon'),
 
-        ('qhtml', 'KURUNG_V_BUKA', 'Z'): ('qhead', ('X', 'Z')),
-        ('qhead', 'HEAD', 'X'): ('qhead', 'X'),
-        ('qhead', 'KURUNG_V_TUTUP', 'X'): ('qhead', 'epsilon'),
-        ('qhead', 'ENTER', 'X'): ('qhead', 'X'),
-        ('qhead', 'ENTER', 'Z'): ('qhead', 'Z'),
-        ('qhead', 'GARIS_MIRING', 'X'): ('qhead', 'X'),
+    
 
 
-        ('qhtml', '<', 'Z'): ('qhtml', ('X','Z')),
-        ('qhtml', 'h', 'X'): ('qhtml', ('html','X')),
-        ('qhtml', 't', 'html'): ('qhtml', 'html'),
-        ('qhtml', 'm', 'h'): ('qhtml', 'h'),
-        ('qhtml', 'l', 'h'): ('qhtml', 'h'),
-        ('qhtml', '>', 'h'): ('qhtml', 'h'),
-        ('qhtml', 'l', 'X'): ('qhtml', 'X'),
-        ('qhtml', '>', 'X'): ('qhtml', 'epsilon'),
-        ('qhtml', '/', 'X'): ('qhtml', 'Y'),
-        ('qhtml', 'h', 'Y'): ('qhtml', 'html'),
-        ('qhtml', 't', 'h'): ('qhtml', 'html'),
-        ('qhtml', 'h', 'Y'): ('qhead', 'head'),
-        ('qhtml', 't', 'Y'): ('qhtml', 'Y'),
-        ('qhtml', 'm', 'Y'): ('qhtml', 'Y'),
-        ('qhtml', 'l', 'Y'): ('qhtml', 'Y'),
         ('qhtml', '>', 'Y'): ('qhtml', 'epsilon')
     }
     final_states = {'q0'}
