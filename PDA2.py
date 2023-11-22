@@ -73,6 +73,7 @@ def main():
     # lines = fh.readFile(pdaFilePath)
     inputStringFilePath = sys.argv[1]
     token = lexer.createToken(inputStringFilePath)
+    token = list(filter(lambda x: x != 'ENTER', token))
     print(token)
     print("\n")
     # token.remove('ENTER')
