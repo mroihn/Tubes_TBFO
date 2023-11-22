@@ -1,0 +1,26 @@
+html = A
+head = B
+body = C
+title = D
+script = E
+h1 = F
+h2 = G
+h3= H
+h4 = I
+h5 = J
+h6 = K
+p = L
+em = M
+b = N
+abbr = O
+strong = P
+small = Q
+div = R
+a = S
+button = T
+form = U
+table = V
+tr = W
+td = X
+th = Y
+
