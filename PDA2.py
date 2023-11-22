@@ -58,7 +58,7 @@ def main():
         ('qhtml', 'HEAD_OPEN', 'A'): ('qhtml', ('B', 'A')),
         ('qhtml', 'HEAD_CLOSE', 'B'): ('qhtml', 'epsilon'),
 
-        ('qhtml', 'BODY_OPEN', 'B'): ('qhtml', ('C', 'B')),
+        ('qhtml', 'BODY_OPEN', 'A'): ('qhtml', ('C', 'A')),
         ('qhtml', 'BODY_CLOSE', 'C'): ('qhtml', 'epsilon'),
 
         ('qhtml', 'TITLE_OPEN', 'B'): ('qhtml', ('D', 'B')),
@@ -110,6 +110,29 @@ def main():
         ('qhtml', 'LINK_OPEN', 'X'): ('qhtml', 'X'),
         ('qhtml', 'LINK_OPEN', 'Y'): ('qhtml', 'Y'),
 
+        ('qhtml', 'IMG', 'C'): ('qhtml', 'C'),
+        ('qhtml', 'IMG', 'E'): ('qhtml', 'E'),
+        ('qhtml', 'IMG', 'F'): ('qhtml', 'F'),
+        ('qhtml', 'IMG', 'G'): ('qhtml', 'G'),
+        ('qhtml', 'IMG', 'H'): ('qhtml', 'H'),
+        ('qhtml', 'IMG', 'I'): ('qhtml', 'I'),
+        ('qhtml', 'IMG', 'J'): ('qhtml', 'J'),
+        ('qhtml', 'IMG', 'K'): ('qhtml', 'K'),
+        ('qhtml', 'IMG', 'L'): ('qhtml', 'L'),
+        ('qhtml', 'IMG', 'M'): ('qhtml', 'M'),
+        ('qhtml', 'IMG', 'N'): ('qhtml', 'N'),
+        ('qhtml', 'IMG', 'O'): ('qhtml', 'O'),
+        ('qhtml', 'IMG', 'P'): ('qhtml', 'P'),
+        ('qhtml', 'IMG', 'Q'): ('qhtml', 'Q'),
+        ('qhtml', 'IMG', 'R'): ('qhtml', 'R'),
+        ('qhtml', 'IMG', 'S'): ('qhtml', 'S'),
+        ('qhtml', 'IMG', 'T'): ('qhtml', 'T'),
+        ('qhtml', 'IMG', 'U'): ('qhtml', 'U'),
+        ('qhtml', 'IMG', 'V'): ('qhtml', 'V'),
+        ('qhtml', 'IMG', 'W'): ('qhtml', 'W'),
+        ('qhtml', 'IMG', 'X'): ('qhtml', 'X'),
+        ('qhtml', 'IMG', 'Y'): ('qhtml', 'Y'),
+
         ('qhtml', 'H1_OPEN', 'E'): ('qhtml', ('F', 'E')),
         ('qhtml', 'H1_OPEN', 'G'): ('qhtml', ('F', 'G')),
         ('qhtml', 'H1_OPEN', 'C'): ('qhtml', ('F', 'C')),
@@ -134,7 +157,6 @@ def main():
         ('qhtml', 'H1_CLOSE', 'F'): ('qhtml', 'epsilon'),
   
         ('qhtml', 'A_OPEN', 'C'): ('qhtml', ('S', 'C')),
-        ('qhtml', 'A_OPEN', 'D'): ('qhtml', ('S', 'D')),
         ('qhtml', 'A_OPEN', 'E'): ('qhtml', ('S', 'E')),
         ('qhtml', 'A_OPEN', 'F'): ('qhtml', ('S', 'F')),
         ('qhtml', 'A_OPEN', 'G'): ('qhtml', ('S', 'G')),
@@ -301,7 +323,6 @@ def main():
       
     
         ('qhtml', 'BUTTON_OPEN', 'C'): ('qhtml', ('T', 'C')),
-        ('qhtml', 'BUTTON_OPEN', 'D'): ('qhtml', ('T', 'D')),
         ('qhtml', 'BUTTON_OPEN', 'E'): ('qhtml', ('T', 'E')),
         ('qhtml', 'BUTTON_OPEN', 'F'): ('qhtml', ('T', 'F')),
         ('qhtml', 'BUTTON_OPEN', 'G'): ('qhtml', ('T', 'G')),
@@ -325,7 +346,6 @@ def main():
         ('qhtml', 'BUTTON_CLOSE', 'T'): ('qhtml', 'epsilon'),
     
         ('qhtml', 'FORM_OPEN', 'C'): ('qhtml', ('U', 'C')),
-        ('qhtml', 'FORM_OPEN', 'D'): ('qhtml', ('U', 'D')),
         ('qhtml', 'FORM_OPEN', 'E'): ('qhtml', ('U', 'E')),
         ('qhtml', 'FORM_OPEN', 'F'): ('qhtml', ('U', 'F')),
         ('qhtml', 'FORM_OPEN', 'G'): ('qhtml', ('U', 'G')),
@@ -349,7 +369,6 @@ def main():
         ('qhtml', 'FORM_CLOSE', 'U'): ('qhtml', 'epsilon'),
 
         ('qhtml', 'TABLE_OPEN', 'C'): ('qhtml', ('V', 'C')),
-        ('qhtml', 'TABLE_OPEN', 'D'): ('qhtml', ('V', 'D')),
         ('qhtml', 'TABLE_OPEN', 'E'): ('qhtml', ('V', 'E')),
         ('qhtml', 'TABLE_OPEN', 'F'): ('qhtml', ('V', 'F')),
         ('qhtml', 'TABLE_OPEN', 'G'): ('qhtml', ('V', 'G')),
