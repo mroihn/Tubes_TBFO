@@ -93,7 +93,6 @@ token_rules = [
     (r'<title>', 'TITLE_OPEN'),
     (r'</title>', 'TITLE_CLOSE'),
     (r'<link>', 'LINK_OPEN'),
-    (r'</link>', 'LINK_CLOSE'),
     (r'<script>', 'SCRIPT_OPEN'),
     (r'</script>', 'SCRIPT_CLOSE'),
     (r'<h1>', 'H1_OPEN'),

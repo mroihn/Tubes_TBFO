@@ -52,13 +52,64 @@ def main():
     initial_stack_symbol = 'Z'
     transitions = {
         # HTML
-        ('qhtml', 'HTML_OPEN', 'Z'): ('qhtml', ('X', 'Z')),
-        ('qhtml', 'HEAD_OPEN', 'X'): ('qhtml', ('Y', 'X')),
-        ('qhtml', 'BODY_OPEN', 'Y'): ('qhtml', ('P', 'Y')),
-        ('qhtml', 'HEAD_CLOSE', 'Y'): ('qhtml', 'epsilon'),
-        ('qhtml', 'HTML_CLOSE', 'X'): ('qhtml', 'epsilon'),
-        ('qhtml', 'BODY_CLOSE', 'Y'): ('qhtml', 'epsilon'),
+        ('qhtml', 'HTML_OPEN', 'Z'): ('qhtml', ('A', 'Z')),
+        ('qhtml', 'HTML_CLOSE', 'A'): ('qhtml', 'epsilon'),
 
+        ('qhtml', 'HEAD_OPEN', 'A'): ('qhtml', ('B', 'A')),
+        ('qhtml', 'HEAD_CLOSE', 'B'): ('qhtml', 'epsilon'),
+
+        ('qhtml', 'BODY_OPEN', 'B'): ('qhtml', ('C', 'B')),
+        ('qhtml', 'BODY_CLOSE', 'C'): ('qhtml', 'epsilon'),
+
+        ('qhtml', 'TITLE_OPEN', 'B'): ('qhtml', ('D', 'B')),
+        ('qhtml', 'TITLE_OPEN', 'E'): ('qhtml', ('D', 'E')),
+        ('qhtml', 'TITLE_OPEN', 'F'): ('qhtml', ('D', 'F')),
+        ('qhtml', 'TITLE_OPEN', 'G'): ('qhtml', ('D', 'G')),
+        ('qhtml', 'TITLE_OPEN', 'H'): ('qhtml', ('D', 'H')),
+        ('qhtml', 'TITLE_OPEN', 'I'): ('qhtml', ('D', 'I')),
+        ('qhtml', 'TITLE_OPEN', 'J'): ('qhtml', ('D', 'J')),
+        ('qhtml', 'TITLE_OPEN', 'K'): ('qhtml', ('D', 'K')),
+        ('qhtml', 'TITLE_OPEN', 'L'): ('qhtml', ('D', 'L')),
+        ('qhtml', 'TITLE_OPEN', 'M'): ('qhtml', ('D', 'M')),
+        ('qhtml', 'TITLE_OPEN', 'N'): ('qhtml', ('D', 'N')),
+        ('qhtml', 'TITLE_OPEN', 'O'): ('qhtml', ('D', 'O')),
+        ('qhtml', 'TITLE_OPEN', 'P'): ('qhtml', ('D', 'P')),
+        ('qhtml', 'TITLE_OPEN', 'Q'): ('qhtml', ('D', 'Q')),
+        ('qhtml', 'TITLE_OPEN', 'R'): ('qhtml', ('D', 'R')),
+        ('qhtml', 'TITLE_OPEN', 'S'): ('qhtml', ('D', 'S')),
+        ('qhtml', 'TITLE_OPEN', 'T'): ('qhtml', ('D', 'T')),
+        ('qhtml', 'TITLE_OPEN', 'U'): ('qhtml', ('D', 'U')),
+        ('qhtml', 'TITLE_OPEN', 'V'): ('qhtml', ('D', 'V')),
+        ('qhtml', 'TITLE_OPEN', 'W'): ('qhtml', ('D', 'W')),
+        ('qhtml', 'TITLE_OPEN', 'X'): ('qhtml', ('D', 'X')),
+        ('qhtml', 'TITLE_OPEN', 'Y'): ('qhtml', ('D', 'Y')),
+        ('qhtml', 'TITLE_CLOSE', 'D'): ('qhtml', 'epsilon'),
+
+        ('qhtml', 'LINK_OPEN', 'B'): ('qhtml', 'B'),
+        ('qhtml', 'LINK_OPEN', 'C'): ('qhtml', 'C'),
+        ('qhtml', 'LINK_OPEN', 'E'): ('qhtml', 'E'),
+        ('qhtml', 'LINK_OPEN', 'F'): ('qhtml', 'F'),
+        ('qhtml', 'LINK_OPEN', 'G'): ('qhtml', 'G'),
+        ('qhtml', 'LINK_OPEN', 'H'): ('qhtml', 'H'),
+        ('qhtml', 'LINK_OPEN', 'I'): ('qhtml', 'I'),
+        ('qhtml', 'LINK_OPEN', 'J'): ('qhtml', 'J'),
+        ('qhtml', 'LINK_OPEN', 'K'): ('qhtml', 'K'),
+        ('qhtml', 'LINK_OPEN', 'L'): ('qhtml', 'L'),
+        ('qhtml', 'LINK_OPEN', 'M'): ('qhtml', 'M'),
+        ('qhtml', 'LINK_OPEN', 'N'): ('qhtml', 'N'),
+        ('qhtml', 'LINK_OPEN', 'O'): ('qhtml', 'O'),
+        ('qhtml', 'LINK_OPEN', 'P'): ('qhtml', 'P'),
+        ('qhtml', 'LINK_OPEN', 'Q'): ('qhtml', 'Q'),
+        ('qhtml', 'LINK_OPEN', 'R'): ('qhtml', 'R'),
+        ('qhtml', 'LINK_OPEN', 'S'): ('qhtml', 'S'),
+        ('qhtml', 'LINK_OPEN', 'T'): ('qhtml', 'T'),
+        ('qhtml', 'LINK_OPEN', 'U'): ('qhtml', 'U'),
+        ('qhtml', 'LINK_OPEN', 'V'): ('qhtml', 'V'),
+        ('qhtml', 'LINK_OPEN', 'W'): ('qhtml', 'W'),
+        ('qhtml', 'LINK_OPEN', 'X'): ('qhtml', 'X'),
+        ('qhtml', 'LINK_OPEN', 'Y'): ('qhtml', 'Y'),
+  
+      
     
 
 
@@ -73,6 +124,7 @@ def main():
     # lines = fh.readFile(pdaFilePath)
     inputStringFilePath = sys.argv[1]
     token = lexer.createToken(inputStringFilePath)
+    token = list(filter(lambda x: x != 'ENTER',token))
     print(token)
     print("\n")
     # token.remove('ENTER')
