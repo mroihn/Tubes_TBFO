@@ -134,7 +134,7 @@ def createToken(text):
     fileWrite = open(path + "./tokenResult.txt", 'w')
     for token in tokenResult:
         fileWrite.write(str(token)+" \n")
-        print(token)
+        # print(token)
     fileWrite.close()
 
     return tokenResult
