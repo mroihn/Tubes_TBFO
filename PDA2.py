@@ -133,7 +133,6 @@ def main():
         ('qhtml', 'H1_OPEN', 'Y'): ('qhtml', ('F', 'Y')),
         ('qhtml', 'H1_CLOSE', 'F'): ('qhtml', 'epsilon'),
   
-<<<<<<< Updated upstream
         ('qhtml', 'A_OPEN', 'C'): ('qhtml', ('S', 'C')),
         ('qhtml', 'A_OPEN', 'D'): ('qhtml', ('S', 'D')),
         ('qhtml', 'A_OPEN', 'E'): ('qhtml', ('S', 'E')),
@@ -158,7 +157,6 @@ def main():
         ('qhtml', 'A_OPEN', 'X'): ('qhtml', ('S', 'X')),
         ('qhtml', 'A_OPEN', 'Y'): ('qhtml', ('S', 'Y')),
         ('qhtml', 'A_CLOSE', 'S'): ('qhtml', 'epsilon'),
-=======
 
         ('qhtml', 'B_OPEN', 'C'): ('qhtml', ('N', 'C')),
         ('qhtml', 'B_OPEN', 'E'): ('qhtml', ('N', 'E')),
@@ -301,7 +299,6 @@ def main():
         ('qhtml', 'DIV_CLOSE', 'R'): ('qhtml', 'epsilon'),
      
       
->>>>>>> Stashed changes
     
         ('qhtml', 'BUTTON_OPEN', 'C'): ('qhtml', ('T', 'C')),
         ('qhtml', 'BUTTON_OPEN', 'D'): ('qhtml', ('T', 'D')),
