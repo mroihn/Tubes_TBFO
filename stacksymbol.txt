@@ -23,4 +23,13 @@ table = V
 tr = W
 td = X
 th = Y
+link = a
+br = b
+hr = c
+img = d
+input = e
 
+
+-sambungin qimage biar atribut bisa dipermutasi
+-bikin state untuk validasi KURUNG_TUTUP
+-bikin link
