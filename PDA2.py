@@ -602,7 +602,7 @@ def main():
         ('qhtml', 'BUTTON_OPEN', 'K'): ('qhtml', ('T', 'K')),
         ('qhtml', 'BUTTON_OPEN', 'L'): ('qhtml', ('T', 'L')),
         ('qhtml', 'BUTTON_OPEN', 'M'): ('qhtml', ('T', 'M')),
-        ('qhtml', 'BUTTON_OPEN', 'N'): ('qhtml', ('T', 'N')),
+        ('qhtml', 'BUTTON_OPEN', 'N'): ('qhtml', 'T'),
         ('qhtml', 'BUTTON_OPEN', 'O'): ('qhtml', ('T', 'O')),
         ('qhtml', 'BUTTON_OPEN', 'P'): ('qhtml', ('T', 'P')),
         ('qhtml', 'BUTTON_OPEN', 'Q'): ('qhtml', ('T', 'Q')),
