@@ -17,8 +17,10 @@ def lex(text, token_rules):
 
             regex = re.compile(pattern)
             flag = regex.match(text,pos)
+            # print(flag)
 
             if flag:
+                print(flag)
                 if tag:
                     token = tag
                     tokens.append(token)
@@ -84,60 +86,67 @@ token_rules = [
     (r'\bvar\b',                "VAR"),
 
     # KEYWORDS
-    (r'<html>', 'HTML_OPEN'),
+    (r'<html', 'HTML_OPEN'),
+    (r'>', 'KURUNG_TUTUP'),
     (r'</html>', 'HTML_CLOSE'),
-    (r'<body>', 'BODY_OPEN'),
+    (r'<body', 'BODY_OPEN'),
     (r'</body>', 'BODY_CLOSE'),
-    (r'<head>', 'HEAD_OPEN'),
+    (r'<head', 'HEAD_OPEN'),
     (r'</head>', 'HEAD_CLOSE'),
-    (r'<title>', 'TITLE_OPEN'),
+    (r'<title', 'TITLE_OPEN'),
     (r'</title>', 'TITLE_CLOSE'),
     (r'<link\s+rel="([^"]+)"\s*?>', 'LINK_OPEN'),
-    (r'<script>', 'SCRIPT_OPEN'),
+    (r'<script', 'SCRIPT_OPEN'),
     (r'</script>', 'SCRIPT_CLOSE'),
-    (r'<h1>', 'H1_OPEN'),
+    (r'<h1', 'H1_OPEN'),
     (r'</h1>', 'H1_CLOSE'),
-    (r'<h2>', 'H2_OPEN'),
+    (r'<h2', 'H2_OPEN'),
     (r'</h2>', 'H2_CLOSE'),
-    (r'<h3>', 'H3_OPEN'),
+    (r'<h3', 'H3_OPEN'),
     (r'</h3>', 'H3_CLOSE'),
-    (r'<h4>', 'H4_OPEN'),
+    (r'<h4', 'H4_OPEN'),
     (r'</h4>', 'H4_CLOSE'),
-    (r'<h5>', 'H5_OPEN'),
+    (r'<h5', 'H5_OPEN'),
     (r'</h5>', 'H5_CLOSE'),
-    (r'<h6>', 'H6_OPEN'),
+    (r'<h6', 'H6_OPEN'),
     (r'</h6>', 'H6_CLOSE'),
-    (r'<p>', 'P_OPEN'),
+    (r'<p', 'P_OPEN'),
     (r'</p>', 'P_CLOSE'),
-    (r'<b>', 'B_OPEN'),
+    (r'<b', 'B_OPEN'),
     (r'</b>', 'B_CLOSE'),
-    (r'<abbr>', 'ABBR_OPEN'),
+    (r'<abbr', 'ABBR_OPEN'),
     (r'</abbr>', 'ABBR_CLOSE'),
-    (r'<strong>', 'STRONG_OPEN'),
+    (r'<strong', 'STRONG_OPEN'),
     (r'</strong>', 'STRONG_CLOSE'),
-    (r'<small>', 'SMALL_OPEN'),
+    (r'<small', 'SMALL_OPEN'),
     (r'</small>', 'SMALL_CLOSE'),
-    (r'<hr>', 'HR_OPEN'),
-    (r'<div>', 'DIV_OPEN'),
+    (r'<hr', 'HR_OPEN'),
+    (r'<div', 'DIV_OPEN'),
     (r'</div>', 'DIV_CLOSE'),
-    (r'<a>', 'A_OPEN'),
+    (r'<a', 'A_OPEN'),
     (r'</a>', 'A_CLOSE'),
     (r'<img\s+src="([^"]+)"\s*?>', 'IMG'),
-    (r'<button>', 'BUTTON_OPEN'),
+    (r'<button', 'BUTTON_OPEN'),
     (r'</button>', 'BUTTON_CLOSE'),
-    (r'<form>', 'FORM_OPEN'),
+    (r'<form', 'FORM_OPEN'),
     (r'</form>', 'FORM_CLOSE'),
-    (r'<table>', 'TABLE_OPEN'),
+    (r'<table', 'TABLE_OPEN'),
     (r'</table>', 'TABLE_CLOSE'),
-    (r'<tr>', 'TR_OPEN'),
+    (r'<tr', 'TR_OPEN'),
     (r'</tr>', 'TR_CLOSE'),
-    (r'<td>', 'TD_OPEN'),
+    (r'<td', 'TD_OPEN'),
     (r'</td>', 'TD_CLOSE'),
-    (r'<th>', 'TH_OPEN'),
+    (r'<th', 'TH_OPEN'),
+    (r'</th>', 'TH_CLOSE'),
+    (r'\bclass="([^"]+)"', 'ID'),
+    (r'\bid="([^"]+)"', 'ID'),
+    (r'\bstyle="([^"]+)"', 'STYLE'),
+    (r'</th>', 'TH_CLOSE'),
+    (r'</th>', 'TH_CLOSE'),
     (r'</th>', 'TH_CLOSE'),
 
     # Untuk Variabel
-    (r'[A-Za-z_$][A-Za-z0-9_$]*', 'VAR'),
+    # (r'[A-Za-z_$][A-Za-z0-9_$]*', 'VAR'),
 ]
 
 def createToken(text):
@@ -161,5 +170,12 @@ def createToken(text):
     fileWrite.close()
 
     return tokenResult
+
+r = re.compile(r' class="\w*\s*"')
+text = " class=\" \""
+matches = r.finditer(text)
+
+for match in matches:
+    print(match)
 
 createToken('tes.html')
