@@ -125,7 +125,8 @@ token_rules = [
     (r'</div>', 'DIV_CLOSE'),
     (r'<a', 'A_OPEN'),
     (r'</a>', 'A_CLOSE'),
-    (r'<img\s+src="([^"]+)"\s*?>', 'IMG'),
+    (r'<img','IMG'),
+    (r'<input', 'INPUT'),
     (r'utton', 'BUTTON_OPEN'),
     (r'</button>', 'BUTTON_CLOSE'),
     (r'<form', 'FORM_OPEN'),
@@ -141,11 +142,13 @@ token_rules = [
     (r'\bid="([^"]+)"', 'ID'),
     (r'\bclass="([^"]+)"', 'CLASS'),
     (r'\bstyle="([^"]+)"', 'STYLE'),
-    (r'\btype="([^"]+)"', 'TYPE'),
+    (r'\btype="(submit|reset|button)"', 'TYPE_BUTTON'),
+    (r'\btype="(text|password|email|number|checkbox)"', 'TYPE_INPUT'),
     (r'\bhref="([^"]+)"', 'HREF'),
+    (r'\bsrc="([^"]+)"', 'SRC'),
     (r'\balt="([^"]+)"', 'ALT'),
     (r'\baction="([^"]+)"', 'ACTION'),
-    (r'\bmethod="([^"]+)"', 'METHOD'),
+    (r'\bmethod="(GET|POST)"', 'METHOD'),
     (r'</th>', 'TH_CLOSE'),
     (r'</th>', 'TH_CLOSE'),
     (r'</th>', 'TH_CLOSE'),
@@ -176,8 +179,8 @@ def createToken(text):
 
     return tokenResult
 
-r = re.compile(r' class="\w*\s*"')
-text = " class=\" \""
+r = re.compile(r'\bmethod="(GET|POST)"')
+text = " method=\" \""
 matches = r.finditer(text)
 
 for match in matches:
