@@ -23,4 +23,8 @@ table = V
 tr = W
 td = X
 th = Y
-
+link = a
+br = b
+hr = c
+img = d
+input = e
