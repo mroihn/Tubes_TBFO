@@ -48,18 +48,21 @@ def main():
     states = {'q0', 'q1', 'q2', 'q3'}
     alphabet = {'<', '>', '/', ' ', 'h', 't', 'm', 'l'}
     stack_alphabet = {'tag_open', 'tag_close'}
-    initial_state = 'qhtml'
+    initial_state = 'qkurung'
     initial_stack_symbol = 'Z'
     transitions = {
         # HTML
         ('qkurung', 'HTML_OPEN', 'Z'): ('qhtml', ('A', 'Z')),
-        ('qkurung', 'HTML_CLOSE', 'A'): ('qhtml', 'epsilon'),
+        ('qhtml', 'KURUNG_TUTUP', 'A'): ('qkurunghead', 'A'),
+        ('qkurung', 'HTML_CLOSE', 'A'): ('qkurung', 'epsilon'),
 
-        ('qkurung', 'HEAD_OPEN', 'A'): ('qhead', ('B', 'A')),
-        ('qkurung', 'HEAD_CLOSE', 'B'): ('qhead', 'epsilon'),
+        ('qkurunghead', 'HEAD_OPEN', 'A'): ('qhead', ('B', 'A')),
+        ('qhead', 'KURUNG_TUTUP', 'B'): ('qkurunghead', 'B'),
+        ('qkurunghead', 'HEAD_CLOSE', 'B'): ('qkurungbody', 'epsilon'),
 
-        ('qkurung', 'BODY_OPEN', 'A'): ('qbody', ('C', 'A')),
-        ('qkurung', 'BODY_CLOSE', 'C'): ('qbody', 'epsilon'),
+        ('qkurungbody', 'BODY_OPEN', 'A'): ('qbody', ('C', 'A')),
+        ('qbody', 'KURUNG_TUTUP', 'C'): ('qkurungbody', 'C'),
+        ('qkurungbody', 'BODY_CLOSE', 'C'): ('qkurung', 'epsilon'),
 
 
         
