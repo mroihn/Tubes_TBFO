@@ -143,6 +143,14 @@ def main():
         ('qhtml', 'STYLE', 'X'): ('qhtml', 'X'),
         ('qhtml', 'STYLE', 'Y'): ('qhtml', 'Y'),
 
+        ('qhtml', 'TYPE', 'T'): ('qhtml', 'T'),
+
+        ('qhtml', 'HREF', 'S'): ('qhtml', 'S'),
+
+        ('qhtml', 'ACTION', 'U'): ('qhtml', 'U'),
+
+        ('qhtml', 'METHOD', 'U'): ('qhtml', 'U'),
+
         ('qhtml', 'KURUNG_TUTUP', 'A'): ('qhtml', 'A'),
         ('qhtml', 'KURUNG_TUTUP', 'B'): ('qhtml', 'B'),
         ('qhtml', 'KURUNG_TUTUP', 'C'): ('qhtml', 'C'),
