@@ -127,6 +127,7 @@ token_rules = [
     (r'</a>', 'A_CLOSE'),
     (r'<img','IMG'),
     (r'<input', 'INPUT'),
+    (r'r', 'BR'),
     (r'utton', 'BUTTON_OPEN'),
     (r'</button>', 'BUTTON_CLOSE'),
     (r'<form', 'FORM_OPEN'),
