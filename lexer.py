@@ -42,7 +42,7 @@ token_rules = [
     (r'//.*', None),
     (r'/\*(.|\n)*?\*/', None),
     (r'[\n]+[ \t]*\'\'\'[(?!(\'\'\'))\w\W]*\'\'\'',  None),
-    (r'[\n]+[ \t]*\"\"\"[(?!(\"\"\"))\w\W]*\"\"\"',  None),
+    # (r'[\n]*[ \t]*<!--[\w\W]*-->',  None),
 
     # OPERATOR
     # (r'===', 'EQUAL_OPERATOR'),
@@ -86,6 +86,7 @@ token_rules = [
     # (r'\bvar\b',                "VAR"),
 
     # KEYWORDS
+    (r'<!--([^"]+)-->', 'KOMEN'),
     (r'<html', 'HTML_OPEN'),
     (r'>', 'KURUNG_TUTUP'),
     (r'</html>', 'HTML_CLOSE'),
@@ -117,6 +118,8 @@ token_rules = [
     (r'</button>', 'BUTTON_CLOSE'),
     (r'<b', 'B_OPEN'),
     (r'</b>', 'B_CLOSE'),
+    (r'<em', 'EM_OPEN'),
+    (r'</em>', 'EM_CLOSE'),
     (r'<abbr', 'ABBR_OPEN'),
     (r'</abbr>', 'ABBR_CLOSE'),
     (r'<strong', 'STRONG_OPEN'),
@@ -154,7 +157,7 @@ token_rules = [
 
 
     #Untuk Variabel
-    (r'.*', 'VAR'),
+    (r'[^<]*', 'VAR'),
 ]
 
 def createToken(text):
@@ -179,8 +182,11 @@ def createToken(text):
 
     return tokenResult
 
-r = re.compile(r'\bmethod="(GET|POST)"')
-text = " method=\" \""
+r = re.compile(r'[\n]*[ \t]*<!--[\w\W]*-->')
+text = """<!-- ijijijjiji -->
+
+
+"""
 matches = r.finditer(text)
 
 for match in matches:
