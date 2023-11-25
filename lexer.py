@@ -21,6 +21,7 @@ def lex(text, token_rules):
 
             if flag:
                 print(flag)
+                print(tag)
                 if tag:
                     token = tag
                     tokens.append(token)
@@ -38,11 +39,11 @@ def lex(text, token_rules):
 token_rules = [
 
     # Not Token
-    (r'[ \t]+', None),
+    (r'[\s]+', None),
     (r'//.*', None),
     (r'/\*(.|\n)*?\*/', None),
-    (r'[\n]+[ \t]*\'\'\'[(?!(\'\'\'))\w\W]*\'\'\'',  None),
-    # (r'[\n]*[ \t]*<!--[\w\W]*-->',  None),
+    # (r'[\n]+[ \t]*\'\'\'[(?!(\'\'\'))\w\W]*\'\'\'',  None),
+    # (r'<!--([\s\S]*?)-->',  None),
 
     # OPERATOR
     # (r'===', 'EQUAL_OPERATOR'),
@@ -86,7 +87,7 @@ token_rules = [
     # (r'\bvar\b',                "VAR"),
 
     # KEYWORDS
-    (r'<!--([^"]+)-->', 'KOMEN'),
+    (r'<!--([\s\S]*?)-->', 'KOMEN'),
     (r'<html', 'HTML_OPEN'),
     (r'>', 'KURUNG_TUTUP'),
     (r'</html>', 'HTML_CLOSE'),
@@ -157,7 +158,7 @@ token_rules = [
 
 
     #Untuk Variabel
-    (r'[^<]*', 'VAR'),
+    (r'[^<]+', 'VAR'),
 ]
 
 def createToken(text):

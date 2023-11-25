@@ -534,7 +534,7 @@ def main():
     print(token)
     print("\n")
     # token.remove('ENTER')
-    print(token)
+    # print(token)
             
    
     # with open(inputStringFilePath, 'r') as inputStringFile:
