@@ -127,7 +127,7 @@ token_rules = [
     (r'</strong>', 'STRONG_CLOSE'),
     (r'<small', 'SMALL_OPEN'),
     (r'</small>', 'SMALL_CLOSE'),
-    (r'<hr', 'HR_OPEN'),
+    (r'<hr', 'HR'),
     (r'<div', 'DIV_OPEN'),
     (r'</div>', 'DIV_CLOSE'),
     (r'<a', 'A_OPEN'),
@@ -193,4 +193,4 @@ matches = r.finditer(text)
 for match in matches:
     print(match)
 
-createToken('tes.html')
+# createToken('tes.html')

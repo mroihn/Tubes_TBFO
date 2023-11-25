@@ -198,6 +198,7 @@ def main():
         ('qkurunghead', 'EM_CLOSE', 'M'): ('qkurunghead', 'epsilon'),
 
         ('qkurungbody', 'BUTTON_OPEN', 'C'): ('qbutton', ('N', 'C')),
+        ('qkurungbody', 'BUTTON_OPEN', 'U'): ('qbutton', ('N', 'U')),
         ('qkurungbody', 'BUTTON_OPEN', 'S'): ('qbutton', ('N', 'S')),
         ('qbutton', 'TYPE_BUTTON', 'N'): ('qbutton', 'N'),
         ('qbutton', 'CLASS', 'N'): ('qbutton', 'N'),
@@ -335,6 +336,7 @@ def main():
         ('qkurungbody', 'SMALL_CLOSE', 'R'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'DIV_OPEN', 'C'): ('qdiv', ('S', 'C')),
+        ('qkurungbody', 'DIV_OPEN', 'U'): ('qdiv', ('S', 'U')),
         ('qkurungbody', 'DIV_OPEN', 'S'): ('qdiv', ('S', 'S')),
         ('qdiv', 'CLASS', 'S'): ('qdiv', 'S'),
         ('qdiv', 'ID', 'S'): ('qdiv', 'S'),
@@ -362,7 +364,7 @@ def main():
         ('qform', 'STYLE', 'U'): ('qform', 'U'),
         ('qform', 'KURUNG_TUTUP', 'U'): ('qkurungbody', 'U'),
         ('qkurungbody', 'VAR', 'U'): ('qkurungbody', 'U'),
-        ('qkurungbody', 'AFORM_CLOSE', 'U'): ('qkurungbody', 'epsilon'),
+        ('qkurungbody', 'FORM_CLOSE', 'U'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'TABLE_OPEN', 'C'): ('qtable', ('V', 'C')),
         ('qkurungbody', 'TABLE_OPEN', 'S'): ('qtable', ('V', 'S')),
