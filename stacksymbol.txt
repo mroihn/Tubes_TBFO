@@ -23,13 +23,19 @@ table = V
 tr = W
 td = X
 th = Y
+
+VOID ELMT
 link = a
 br = b
 hr = c
 img = d
 input = e
 
+ATRIBUT WAJIB
+rel = p
+src = q
 
--sambungin qimage biar atribut bisa dipermutasi
--bikin state untuk validasi KURUNG_TUTUP
--bikin link
+
+
+
+- Bikin nesting

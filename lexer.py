@@ -95,7 +95,7 @@ token_rules = [
     (r'</head>', 'HEAD_CLOSE'),
     (r'<title', 'TITLE_OPEN'),
     (r'</title>', 'TITLE_CLOSE'),
-    (r'<link\s+rel="([^"]+)"\s*?>', 'LINK_OPEN'),
+    (r'<link', 'LINK'),
     (r'<script', 'SCRIPT_OPEN'),
     (r'</script>', 'SCRIPT_CLOSE'),
     (r'<h1', 'H1_OPEN'),
@@ -130,7 +130,6 @@ token_rules = [
     (r'</a>', 'A_CLOSE'),
     (r'<img','IMG'),
     (r'<input', 'INPUT'),
-    
     (r'<form', 'FORM_OPEN'),
     (r'</form>', 'FORM_CLOSE'),
     (r'<table', 'TABLE_OPEN'),
@@ -147,13 +146,12 @@ token_rules = [
     (r'\btype="(submit|reset|button)"', 'TYPE_BUTTON'),
     (r'\btype="(text|password|email|number|checkbox)"', 'TYPE_INPUT'),
     (r'\bhref="([^"]+)"', 'HREF'),
+    (r'\brel="([^"]+)"', 'REL'),
     (r'\bsrc="([^"]+)"', 'SRC'),
     (r'\balt="([^"]+)"', 'ALT'),
     (r'\baction="([^"]+)"', 'ACTION'),
     (r'\bmethod="(GET|POST)"', 'METHOD'),
-    (r'</th>', 'TH_CLOSE'),
-    (r'</th>', 'TH_CLOSE'),
-    (r'</th>', 'TH_CLOSE'),
+
 
     # Untuk Variabel
     # (r'[A-Za-z_$][A-Za-z0-9_$]*', 'VAR'),
