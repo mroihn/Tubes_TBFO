@@ -112,6 +112,7 @@ def main():
         ('qkurungbody', 'H1_CLOSE', 'F'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'H2_OPEN', 'C'): ('qh2', ('G', 'C')),
+        ('qkurungbody', 'H2_OPEN', 'S'): ('qh1', ('G', 'S')),
         ('qh2', 'CLASS', 'G'): ('qh2', 'G'),
         ('qh2', 'ID', 'G'): ('qh2', 'G'),
         ('qh2', 'STYLE', 'G'): ('qh2', 'G'),
@@ -120,6 +121,7 @@ def main():
         ('qkurungbody', 'H2_CLOSE', 'G'): ('qkurungbody', 'epsilon'),
         
         ('qkurungbody', 'H3_OPEN', 'C'): ('qh3', ('H', 'C')),
+        ('qkurungbody', 'H3_OPEN', 'S'): ('qh3', ('H', 'S')),
         ('qh3', 'CLASS', 'H'): ('qh3', 'H'),
         ('qh3', 'ID', 'H'): ('qh3', 'H'),
         ('qh3', 'STYLE', 'H'): ('qh3', 'H'),
@@ -128,6 +130,7 @@ def main():
         ('qkurungbody', 'H3_CLOSE', 'H'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'H4_OPEN', 'C'): ('qh4', ('I', 'C')),
+        ('qkurungbody', 'H4_OPEN', 'S'): ('qh4', ('I', 'S')),
         ('qh4', 'CLASS', 'I'): ('qh4', 'I'),
         ('qh4', 'ID', 'I'): ('qh4', 'I'),
         ('qh4', 'STYLE', 'I'): ('qh4', 'I'),
@@ -136,6 +139,7 @@ def main():
         ('qkurungbody', 'H4_CLOSE', 'I'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'H5_OPEN', 'C'): ('qh5', ('J', 'C')),
+        ('qkurungbody', 'H5_OPEN', 'S'): ('qh5', ('J', 'S')),
         ('qh5', 'CLASS', 'J'): ('qh5', 'J'),
         ('qh5', 'ID', 'J'): ('qh5', 'J'),
         ('qh5', 'STYLE', 'J'): ('qh5', 'J'),
@@ -144,6 +148,7 @@ def main():
         ('qkurungbody', 'H5_CLOSE', 'J'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'H6_OPEN', 'C'): ('qh6', ('K', 'C')),
+        ('qkurungbody', 'H6_OPEN', 'S'): ('qh6', ('K', 'S')),
         ('qh6', 'CLASS', 'K'): ('qh6', 'K'),
         ('qh6', 'ID', 'K'): ('qh6', 'K'),
         ('qh6', 'STYLE', 'K'): ('qh6', 'K'),
@@ -152,6 +157,7 @@ def main():
         ('qkurungbody', 'H6_CLOSE', 'K'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'P_OPEN', 'C'): ('qp', ('L', 'C')),
+        ('qkurungbody', 'P_OPEN', 'S'): ('qp', ('L', 'S')),
         ('qp', 'CLASS', 'L'): ('qp', 'L'),
         ('qp', 'ID', 'L'): ('qp', 'L'),
         ('qp', 'STYLE', 'L'): ('qp', 'L'),
@@ -160,6 +166,7 @@ def main():
         ('qkurungbody', 'P_CLOSE', 'L'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'EM_OPEN', 'C'): ('qem', ('M', 'C')),
+        ('qkurungbody', 'EM_OPEN', 'S'): ('qem', ('M', 'S')),
         ('qem', 'CLASS', 'M'): ('qem', 'M'),
         ('qem', 'ID', 'M'): ('qem', 'M'),
         ('qem', 'STYLE', 'M'): ('qem', 'M'),
@@ -168,6 +175,7 @@ def main():
         ('qkurungbody', 'EM_CLOSE', 'M'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'BUTTON_OPEN', 'C'): ('qbutton', ('N', 'C')),
+        ('qkurungbody', 'BUTTON_OPEN', 'S'): ('qbutton', ('N', 'S')),
         ('qbutton', 'TYPE_BUTTON', 'N'): ('qbutton', 'N'),
         ('qbutton', 'CLASS', 'N'): ('qbutton', 'N'),
         ('qbutton', 'ID', 'N'): ('qbutton', 'N'),
@@ -176,15 +184,17 @@ def main():
         ('qkurungbody', 'VAR', 'N'): ('qkurungbody', 'N'),
         ('qkurungbody', 'BUTTON_CLOSE', 'N'): ('qkurungbody', 'epsilon'),
 
-        ('qkurungbody', 'B_OPEN', 'C'): ('qabbr', ('O', 'C')),
-        ('qabbr', 'CLASS', 'O'): ('qabbr', 'O'),
-        ('qabbr', 'ID', 'O'): ('qabbr', 'O'),
-        ('qabbr', 'STYLE', 'O'): ('qabbr', 'O'),
-        ('qabbr', 'KURUNG_TUTUP', 'O'): ('qkurungbody', 'O'),
+        ('qkurungbody', 'B_OPEN', 'C'): ('qb', ('O', 'C')),
+        ('qkurungbody', 'B_OPEN', 'S'): ('qb', ('O', 'S')),
+        ('qb', 'CLASS', 'O'): ('qb', 'O'),
+        ('qb', 'ID', 'O'): ('qb', 'O'),
+        ('qb', 'STYLE', 'O'): ('qb', 'O'),
+        ('qb', 'KURUNG_TUTUP', 'O'): ('qkurungbody', 'O'),
         ('qkurungbody', 'VAR', 'O'): ('qkurungbody', 'O'),
         ('qkurungbody', 'B_CLOSE', 'O'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'ABBR_OPEN', 'C'): ('qabbr', ('P', 'C')),
+        ('qkurungbody', 'ABBR_OPEN', 'S'): ('qabbr', ('P', 'S')),
         ('qabbr', 'CLASS', 'P'): ('qabbr', 'P'),
         ('qabbr', 'ID', 'P'): ('qabbr', 'P'),
         ('qabbr', 'STYLE', 'P'): ('qabbr', 'P'),
@@ -193,6 +203,7 @@ def main():
         ('qkurungbody', 'ABBR_CLOSE', 'P'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'STRONG_OPEN', 'C'): ('qstrong', ('Q', 'C')),
+        ('qkurungbody', 'STRONG_OPEN', 'S'): ('qstrong', ('Q', 'S')),
         ('qstrong', 'CLASS', 'Q'): ('qstrong', 'Q'),
         ('qstrong', 'ID', 'Q'): ('qstrong', 'Q'),
         ('qstrong', 'STYLE', 'Q'): ('qstrong', 'Q'),
@@ -201,6 +212,7 @@ def main():
         ('qkurungbody', 'STRONG_CLOSE', 'Q'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'SMALL_OPEN', 'C'): ('qsmall', ('R', 'C')),
+        ('qkurungbody', 'SMALL_OPEN', 'S'): ('qsmall', ('R', 'S')),
         ('qsmall', 'CLASS', 'R'): ('qsmall', 'R'),
         ('qsmall', 'ID', 'R'): ('qsmall', 'R'),
         ('qsmall', 'STYLE', 'R'): ('qsmall', 'R'),
@@ -209,6 +221,7 @@ def main():
         ('qkurungbody', 'SMALL_CLOSE', 'R'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'DIV_OPEN', 'C'): ('qdiv', ('S', 'C')),
+        ('qkurungbody', 'DIV_OPEN', 'S'): ('qdiv', ('S', 'S')),
         ('qdiv', 'CLASS', 'S'): ('qdiv', 'S'),
         ('qdiv', 'ID', 'S'): ('qdiv', 'S'),
         ('qdiv', 'STYLE', 'S'): ('qdiv', 'S'),
@@ -217,6 +230,7 @@ def main():
         ('qkurungbody', 'DIV_CLOSE', 'S'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'A_OPEN', 'C'): ('qa', ('T', 'C')),
+        ('qkurungbody', 'A_OPEN', 'S'): ('qa', ('T', 'S')),
         ('qa', 'HREF', 'T'): ('qa', 'T'),
         ('qa', 'CLASS', 'T'): ('qa', 'T'),
         ('qa', 'ID', 'T'): ('qa', 'T'),
@@ -226,6 +240,7 @@ def main():
         ('qkurungbody', 'A_CLOSE', 'T'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'FORM_OPEN', 'C'): ('qform', ('U', 'C')),
+        ('qkurungbody', 'FORM_OPEN', 'S'): ('qform', ('U', 'S')),
         ('qform', 'ACTION', 'U'): ('qform', 'U'),
         ('qform', 'METHOD', 'U'): ('qform', 'U'),
         ('qform', 'CLASS', 'U'): ('qform', 'U'),
@@ -236,6 +251,7 @@ def main():
         ('qkurungbody', 'AFORM_CLOSE', 'U'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'TABLE_OPEN', 'C'): ('qtable', ('V', 'C')),
+        ('qkurungbody', 'TABLE_OPEN', 'S'): ('qtable', ('V', 'S')),
         ('qtable', 'CLASS', 'V'): ('qtable', 'V'),
         ('qtable', 'ID', 'V'): ('qtable', 'V'),
         ('qtable', 'STYLE', 'V'): ('qtable', 'V'),
@@ -268,6 +284,7 @@ def main():
         ('qkurungbody', 'TH_CLOSE', 'Y'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'LINK', 'C'): ('qlink', ('p', 'a', 'C')),
+        ('qkurungbody', 'LINK', 'S'): ('qlink', ('p', 'a', 'S')),
         ('qlink', 'REL', 'p'): ('qlink', 'epsilon'),
         ('qlink', 'HREF', 'a'): ('qlink', 'a'),
         ('qlink', 'HREF', 'p'): ('qlink', 'p'),
@@ -280,18 +297,21 @@ def main():
         ('qlink', 'KURUNG_TUTUP', 'a'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'BR', 'C'): ('qbr', ('b', 'C')),
+        ('qkurungbody', 'BR', 'S'): ('qbr', ('b', 'S')),
         ('qbr', 'CLASS', 'b'): ('qbr', 'b'),
         ('qbr', 'ID', 'b'): ('qbr', 'b'),
         ('qbr', 'STYLE', 'b'): ('qbr', 'b'),
         ('qbr', 'KURUNG_TUTUP', 'b'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'HR', 'C'): ('qhr', ('c', 'C')),
+        ('qkurungbody', 'HR', 'S'): ('qhr', ('c', 'S')),
         ('qhr', 'CLASS', 'c'): ('qhr', 'c'),
         ('qhr', 'ID', 'c'): ('qhr', 'c'),
         ('qhr', 'STYLE', 'c'): ('qhr', 'c'),
         ('qhr', 'KURUNG_TUTUP', 'c'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'IMG', 'C'): ('qimg', ('q','d', 'C')),
+        ('qkurungbody', 'IMG', 'S'): ('qimg', ('q','d', 'S')),
         ('qimg', 'SRC', 'q'): ('qimg', 'epsilon'),
         ('qimg', 'ALT', 'd'): ('qimg', 'd'),
         ('qimg', 'ALT', 'q'): ('qimg', 'q'),
@@ -304,6 +324,7 @@ def main():
         ('qimg', 'KURUNG_TUTUP', 'd'): ('qkurungbody', 'epsilon'),
 
         ('qkurungbody', 'INPUT', 'C'): ('qinput', ('e', 'C')),
+        ('qkurungbody', 'INPUT', 'S'): ('qinput', ('e', 'S')),
         ('qinput', 'TYPE_INPUT', 'e'): ('qinput', 'e'),
         ('qinput', 'CLASS', 'e'): ('qinput', 'e'),
         ('qinput', 'ID', 'e'): ('qinput', 'e'),
