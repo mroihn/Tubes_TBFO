@@ -55,7 +55,7 @@ def main():
         ('qkurung', 'HTML_OPEN', 'Z'): ('qhtml', ('A', 'Z')),
         ('qhtml', 'CLASS', 'A'): ('qhtml', 'A'),
         ('qhtml', 'ID', 'A'): ('qhtml', 'A'),
-        ('qhtml', 'NAME', 'A'): ('qhtml', 'A'),
+        ('qhtml', 'STYLE', 'A'): ('qhtml', 'A'),
         ('qhtml', 'KURUNG_TUTUP', 'A'): ('qkurunghead', 'A'),
         ('qkurunghead', 'VAR', 'A'): ('qkurunghead', 'A'),
         ('qkurung', 'HTML_CLOSE', 'A'): ('qkurung', 'epsilon'),
