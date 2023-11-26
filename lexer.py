@@ -20,8 +20,8 @@ def lex(text, token_rules):
             # print(flag)
 
             if flag:
-                # print(flag)
-                # print(tag)
+                print(flag)
+                print(tag)
                 if tag:
                     token = tag
                     tokens.append(token)

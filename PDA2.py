@@ -17,52 +17,28 @@ class PDA:
     def reset(self):
         self.stack = [self.initial_stack_symbol]
 
-    def process_input(self, input_string):
-        current_state = self.initial_state
-        self.reset()
-
-        for symbol in input_string:
-            transition_key = (current_state, symbol, self.stack[-1] if self.stack else None)
-            print(self.stack)
-            print(symbol)
-            # print(transition_key)
-            if transition_key in self.transitions:
-                action = self.transitions[transition_key]
-                self.stack.pop()
-                if action[1] != 'epsilon':
-                    # print(action[1])
-                    for stack_symbol in action[1][::-1]:
-                        self.stack.append(stack_symbol)
-                current_state = action[0]
-                print(current_state)
-                # self.stack.pop()
-            else:
-                return False
-    def compute(self, inputString):
-
+    def process_input(self, inputString):
         currentStackSymbol = self.initial_stack_symbol
         currentState = self.initial_state
-        print('State\tInput\tStack\tMove')
-        print('{}\t {}\t {}\t ({}, {})'.format(currentState, '_', 'Z', currentStackSymbol, self.stack))
-        for char in inputString:
+        self.stack.append(currentStackSymbol)
+        for symbol in inputString:
             for transition in self.transitions:
-                if ((transition[0] == currentState) and (transition[1] == char) and (transition[2] == currentStackSymbol)):
+                if ((transition[0] == currentState) and (transition[1] == symbol) and (transition[2] == currentStackSymbol)):
                     currentState = transition[3]
-                    if(len(transition[4]) == 2):
-                        self.stack.append(char)
-                    elif(len(transition[4]) == 3):
-                        self.stack.append(char)
-                        self.stack.append(char)
-                        
-            previousStackSymbol = currentStackSymbol
-            currentStackSymbol = self.stack[len(self.stack)-1]
-            print('{}\t {}\t {}\t ({}, {})'.format(currentState, char, previousStackSymbol, currentStackSymbol, self.stack))
+                    print(symbol)
+                    self.stack.pop()
+                    if(transition[4] !='epsilon'):
+                        for el in transition[4][::-1]:
+                            self.stack.append(el)
+                    currentStackSymbol = self.stack[len(self.stack)-1]
 
-        if(currentState == self.initial_state):
+        if(currentStackSymbol == self.initial_stack_symbol):
             print('String accepted by PDA.')
+            return True
         else:
             print('String rejected by PDA.')
-
+            return False
+        
 
 
 def main():
