@@ -20,8 +20,8 @@ def lex(text, token_rules):
             # print(flag)
 
             if flag:
-                print(flag)
-                print(tag)
+                # print(flag)
+                # print(tag)
                 if tag:
                     token = tag
                     tokens.append(token)
@@ -189,15 +189,5 @@ def createToken(text):
     fileWrite.close()
 
     return tokenResult
-
-r = re.compile(r'[\n]*[ \t]*<!--[\w\W]*-->')
-text = """<!-- ijijijjiji -->
-
-
-"""
-matches = r.finditer(text)
-
-for match in matches:
-    print(match)
 
 # createToken('tes.html')

@@ -38,8 +38,31 @@ class PDA:
                 # self.stack.pop()
             else:
                 return False
+    def compute(self, inputString):
 
-        return len(self.stack) == 1
+        currentStackSymbol = self.initial_stack_symbol
+        currentState = self.initial_state
+        print('State\tInput\tStack\tMove')
+        print('{}\t {}\t {}\t ({}, {})'.format(currentState, '_', 'Z', currentStackSymbol, self.stack))
+        for char in inputString:
+            for transition in self.transitions:
+                if ((transition[0] == currentState) and (transition[1] == char) and (transition[2] == currentStackSymbol)):
+                    currentState = transition[3]
+                    if(len(transition[4]) == 2):
+                        self.stack.append(char)
+                    elif(len(transition[4]) == 3):
+                        self.stack.append(char)
+                        self.stack.append(char)
+                        
+            previousStackSymbol = currentStackSymbol
+            currentStackSymbol = self.stack[len(self.stack)-1]
+            print('{}\t {}\t {}\t ({}, {})'.format(currentState, char, previousStackSymbol, currentStackSymbol, self.stack))
+
+        if(currentState == self.initial_state):
+            print('String accepted by PDA.')
+        else:
+            print('String rejected by PDA.')
+
 
 
 def main():
@@ -56,7 +79,7 @@ def main():
     with open(inputStringFilePath, 'r') as inputStringFile:
         inputString = inputStringFile.read().replace('\n', '').replace(' ','')
 
-    print(inputString)
+    # print(inputString)
     parsedLines = fh.parseFile(lines)
     print('States: ', parsedLines['states'])
     states = parsedLines['states']
@@ -65,9 +88,9 @@ def main():
     print('Stack Symbols: ', parsedLines['stack_symbols'])
     stack_alphabet = parsedLines['stack_symbols']
     print('Starting State: ', parsedLines['starting_state'])
-    initial_state = parsedLines['starting_state']
+    initial_state = parsedLines['starting_state'][0]
     print('Starting Stack: ', parsedLines['starting_stack'])
-    initial_stack_symbol = parsedLines['starting_stack']
+    initial_stack_symbol = parsedLines['starting_stack'][0]
     print('Accepting States: ', parsedLines['accepting_states'])
     final_states = parsedLines['accepting_states']
     print('Accept By: ', parsedLines['accept_by'])

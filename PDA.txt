@@ -5,33 +5,33 @@ qkurung
 Z
 F
 E
-qkurung HTML_OPEN Z qhtml A Z
+qkurung HTML_OPEN Z qhtml AZ
 qhtml CLASS A qhtml A
 qhtml ID A qhtml A
 qhtml STYLE A qhtml A
 qhtml KURUNG_TUTUP A qkurunghead A
 qkurung HTML_CLOSE A qkurung epsilon
-qkurunghead HEAD_OPEN A qhead B A
+qkurunghead HEAD_OPEN A qhead BA
 qhead CLASS B qhead B
 qhead ID B qhead B
 qhead STYLE B qhead B
 qhead KURUNG_TUTUP B qkurunghead B
 qkurunghead HEAD_CLOSE B qkurungbody epsilon
-qkurungbody BODY_OPEN A qbody C A
+qkurungbody BODY_OPEN A qbody CA
 qbody CLASS C qbody C
 qbody ID C qbody C
 qbody STYLE C qbody C
 qbody KURUNG_TUTUP C qkurungbody C
 qkurungbody BODY_CLOSE C qkurung epsilon
-qkurunghead TITLE_OPEN B qtitle D B
+qkurunghead TITLE_OPEN B qtitle DB
 qtitle CLASS D qtitle D
 qtitle ID D qtitle D
 qtitle STYLE D qtitle D
 qtitle KURUNG_TUTUP D qkurunghead D
 qkurunghead VAR D qkurunghead D
 qkurunghead TITLE_CLOSE D qkurunghead epsilon
-qkurunghead SCRIPT_OPEN B qscripthead E B
-qkurungbody SCRIPT_OPEN C qscriptbody E C
+qkurunghead SCRIPT_OPEN B qscripthead EB
+qkurungbody SCRIPT_OPEN C qscriptbody EC
 qscripthead SRC E qscripthead E
 qscriptbody SRC E qscriptbody E
 qscripthead CLASS E qscripthead E
@@ -46,81 +46,81 @@ qscriptbody KURUNG_TUTUP E qkurungbody E
 qkurungbody VAR E qkurungbody E
 qkurunghead SCRIPT_CLOSE E qkurunghead epsilon
 qkurungbody SCRIPT_CLOSE E qkurungbody epsilon
-qkurungbody H1_OPEN C qh1 F C
-qkurungbody H1_OPEN S qh1 F S
+qkurungbody H1_OPEN C qh1 FC
+qkurungbody H1_OPEN S qh1 FS
 qh1 CLASS F qh1 F
 qh1 ID F qh1 F
 qh1 STYLE F qh1 F
 qh1 KURUNG_TUTUP F qkurungbody F
 qkurungbody VAR F qkurungbody F
 qkurungbody H1_CLOSE F qkurungbody epsilon
-qkurungbody H2_OPEN C qh2 G C
-qkurungbody H2_OPEN S qh1 G S
+qkurungbody H2_OPEN C qh2 GC
+qkurungbody H2_OPEN S qh1 GS
 qh2 CLASS G qh2 G
 qh2 ID G qh2 G
 qh2 STYLE G qh2 G
 qh2 KURUNG_TUTUP G qkurungbody G
 qkurungbody VAR G qkurungbody G
 qkurungbody H2_CLOSE G qkurungbody epsilon
-qkurungbody H3_OPEN C qh3 H C
-qkurungbody H3_OPEN S qh3 H S
+qkurungbody H3_OPEN C qh3 HC
+qkurungbody H3_OPEN S qh3 HS
 qh3 CLASS H qh3 H
 qh3 ID H qh3 H
 qh3 STYLE H qh3 H
 qh3 KURUNG_TUTUP H qkurungbody H
 qkurungbody VAR H qkurungbody H
 qkurungbody H3_CLOSE H qkurungbody epsilon
-qkurungbody H4_OPEN C qh4 I C
-qkurungbody H4_OPEN S qh4 I S
+qkurungbody H4_OPEN C qh4 IC
+qkurungbody H4_OPEN S qh4 IS
 qh4 CLASS I qh4 I
 qh4 ID I qh4 I
 qh4 STYLE I qh4 I
 qh4 KURUNG_TUTUP I qkurungbody I
 qkurungbody VAR I qkurungbody I
 qkurungbody H4_CLOSE I qkurungbody epsilon
-qkurungbody H5_OPEN C qh5 J C
-qkurungbody H5_OPEN S qh5 J S
+qkurungbody H5_OPEN C qh5 JC
+qkurungbody H5_OPEN S qh5 JS
 qh5 CLASS J qh5 J
 qh5 ID J qh5 J
 qh5 STYLE J qh5 J
 qh5 KURUNG_TUTUP J qkurungbody J
 qkurungbody VAR J qkurungbody J
 qkurungbody H5_CLOSE J qkurungbody epsilon
-qkurungbody H6_OPEN C qh6 K C
-qkurungbody H6_OPEN S qh6 K S
+qkurungbody H6_OPEN C qh6 KC
+qkurungbody H6_OPEN S qh6 KS
 qh6 CLASS K qh6 K
 qh6 ID K qh6 K
 qh6 STYLE K qh6 K
 qh6 KURUNG_TUTUP K qkurungbody K
 qkurungbody VAR K qkurungbody K
 qkurungbody H6_CLOSE K qkurungbody epsilon
-qkurungbody P_OPEN C qp L C
-qkurungbody P_OPEN S qp L S
+qkurungbody P_OPEN C qp LC
+qkurungbody P_OPEN S qp LS
 qp CLASS L qp L
 qp ID L qp L
 qp STYLE L qp L
 qp KURUNG_TUTUP L qkurungbody L
 qkurungbody VAR L qkurungbody L
 qkurungbody P_CLOSE L qkurungbody epsilon
-qkurungbody EM_OPEN C qem M C
-qkurunghead EM_OPEN D qemhead M D
-qkurunghead EM_OPEN E qemhead M E
-qkurungbody EM_OPEN E qem M E
-qkurungbody EM_OPEN F qem M F
-qkurungbody EM_OPEN G qem M G
-qkurungbody EM_OPEN H qem M H
-qkurungbody EM_OPEN I qem M I
-qkurungbody EM_OPEN J qem M J
-qkurungbody EM_OPEN K qem M K
-qkurungbody EM_OPEN L qem M L
-qkurungbody EM_OPEN N qem M N
-qkurungbody EM_OPEN S qem M S
-qkurungbody EM_OPEN T qem M T
-qkurungbody EM_OPEN U qem M U
-qkurungbody EM_OPEN V qem M V
-qkurungbody EM_OPEN W qem M W
-qkurungbody EM_OPEN X qem M X
-qkurungbody EM_OPEN Y qem M Y
+qkurungbody EM_OPEN C qem MC
+qkurunghead EM_OPEN D qemhead MD
+qkurunghead EM_OPEN E qemhead ME
+qkurungbody EM_OPEN E qem ME
+qkurungbody EM_OPEN F qem MF
+qkurungbody EM_OPEN G qem MG
+qkurungbody EM_OPEN H qem MH
+qkurungbody EM_OPEN I qem MI
+qkurungbody EM_OPEN J qem MJ
+qkurungbody EM_OPEN K qem MK
+qkurungbody EM_OPEN L qem ML
+qkurungbody EM_OPEN N qem MN
+qkurungbody EM_OPEN S qem MS
+qkurungbody EM_OPEN T qem MT
+qkurungbody EM_OPEN U qem MU
+qkurungbody EM_OPEN V qem MV
+qkurungbody EM_OPEN W qem MW
+qkurungbody EM_OPEN X qem MX
+qkurungbody EM_OPEN Y qem MY
 qem CLASS M qem M
 qem ID M qem M
 qem STYLE M qem M
@@ -133,9 +133,9 @@ qkurungbody VAR M qkurungbody M
 qkurunghead VAR M qkurunghead M
 qkurungbody EM_CLOSE M qkurungbody epsilon
 qkurunghead EM_CLOSE M qkurunghead epsilon
-qkurungbody BUTTON_OPEN C qbutton N C
-qkurungbody BUTTON_OPEN U qbutton N U
-qkurungbody BUTTON_OPEN S qbutton N S
+qkurungbody BUTTON_OPEN C qbutton NC
+qkurungbody BUTTON_OPEN U qbutton NU
+qkurungbody BUTTON_OPEN S qbutton NS
 qbutton TYPE_BUTTON N qbutton N
 qbutton CLASS N qbutton N
 qbutton ID N qbutton N
@@ -143,25 +143,25 @@ qbutton STYLE N qbutton N
 qbutton KURUNG_TUTUP N qkurungbody N
 qkurungbody VAR N qkurungbody N
 qkurungbody BUTTON_CLOSE N qkurungbody epsilon
-qkurungbody B_OPEN C qb O C
-qkurunghead B_OPEN D qbh d O D
-qkurunghead B_OPEN E qbh d O E
-qkurungbody B_OPEN E qb O E
-qkurungbody B_OPEN F qb O F
-qkurungbody B_OPEN G qb O G
-qkurungbody B_OPEN H qb O H
-qkurungbody B_OPEN I qb O I
-qkurungbody B_OPEN J qb O J
-qkurungbody B_OPEN K qb O K
-qkurungbody B_OPEN L qb O L
-qkurungbody B_OPEN N qb O N
-qkurungbody B_OPEN S qb O S
-qkurungbody B_OPEN T qb O T
-qkurungbody B_OPEN U qb O U
-qkurungbody B_OPEN V qb O V
-qkurungbody B_OPEN W qb O W
-qkurungbody B_OPEN X qb O X
-qkurungbody B_OPEN Y qb O Y
+qkurungbody B_OPEN C qb OC
+qkurunghead B_OPEN D qbh dOD
+qkurunghead B_OPEN E qbh dOE
+qkurungbody B_OPEN E qb OE
+qkurungbody B_OPEN F qb OF
+qkurungbody B_OPEN G qb OG
+qkurungbody B_OPEN H qb OH
+qkurungbody B_OPEN I qb OI
+qkurungbody B_OPEN J qb OJ
+qkurungbody B_OPEN K qb OK
+qkurungbody B_OPEN L qb OL
+qkurungbody B_OPEN N qb ON
+qkurungbody B_OPEN S qb OS
+qkurungbody B_OPEN T qb OT
+qkurungbody B_OPEN U qb OU
+qkurungbody B_OPEN V qb OV
+qkurungbody B_OPEN W qb OW
+qkurungbody B_OPEN X qb OX
+qkurungbody B_OPEN Y qb OY
 qb CLASS O qb O
 qb ID O qb O
 qb STYLE O qb O
@@ -174,25 +174,25 @@ qkurungbody VAR O qkurungbody O
 qkurunghead VAR O qkurunghead O
 qkurungbody B_CLOSE O qkurungbody epsilon
 qkurunghead B_CLOSE O qkurunghead epsilon
-qkurungbody ABBR_OPEN C qabbr P C
-qkurunghead ABBR_OPEN D qabbrhead P D
-qkurunghead ABBR_OPEN E qabbrhead P E
-qkurungbody ABBR_OPEN E qabbr P E
-qkurungbody ABBR_OPEN F qabbr P F
-qkurungbody ABBR_OPEN G qabbr P G
-qkurungbody ABBR_OPEN H qabbr P H
-qkurungbody ABBR_OPEN I qabbr P I
-qkurungbody ABBR_OPEN J qabbr P J
-qkurungbody ABBR_OPEN K qabbr P K
-qkurungbody ABBR_OPEN L qabbr P L
-qkurungbody ABBR_OPEN N qabbr P N
-qkurungbody ABBR_OPEN S qabbr P S
-qkurungbody ABBR_OPEN T qabbr P T
-qkurungbody ABBR_OPEN U qabbr P U
-qkurungbody ABBR_OPEN V qabbr P V
-qkurungbody ABBR_OPEN W qabbr P W
-qkurungbody ABBR_OPEN X qabbr P X
-qkurungbody ABBR_OPEN Y qabbr P Y
+qkurungbody ABBR_OPEN C qabbr PC
+qkurunghead ABBR_OPEN D qabbrhead PD
+qkurunghead ABBR_OPEN E qabbrhead PE
+qkurungbody ABBR_OPEN E qabbr PE
+qkurungbody ABBR_OPEN F qabbr PF
+qkurungbody ABBR_OPEN G qabbr PG
+qkurungbody ABBR_OPEN H qabbr PH
+qkurungbody ABBR_OPEN I qabbr PI
+qkurungbody ABBR_OPEN J qabbr PJ
+qkurungbody ABBR_OPEN K qabbr PK
+qkurungbody ABBR_OPEN L qabbr PL
+qkurungbody ABBR_OPEN N qabbr PN
+qkurungbody ABBR_OPEN S qabbr PS
+qkurungbody ABBR_OPEN T qabbr PT
+qkurungbody ABBR_OPEN U qabbr PU
+qkurungbody ABBR_OPEN V qabbr PV
+qkurungbody ABBR_OPEN W qabbr PW
+qkurungbody ABBR_OPEN X qabbr PX
+qkurungbody ABBR_OPEN Y qabbr PY
 qabbr CLASS P qabbr P
 qabbr ID P qabbr P
 qabbr STYLE P qabbr P
@@ -205,25 +205,25 @@ qkurungbody VAR P qkurungbody P
 qkurunghead VAR P qkurunghead P
 qkurungbody ABBR_CLOSE P qkurungbody epsilon
 qkurunghead ABBR_CLOSE P qkurunghead epsilon
-qkurungbody STRONG_OPEN C qstrong Q C
-qkurunghead STRONG_OPEN D qstronghead Q D
-qkurunghead STRONG_OPEN E qstronghead Q E
-qkurungbody STRONG_OPEN E qstrong Q E
-qkurungbody STRONG_OPEN F qstrong Q F
-qkurungbody STRONG_OPEN G qstrong Q G
-qkurungbody STRONG_OPEN H qstrong Q H
-qkurungbody STRONG_OPEN I qstrong Q I
-qkurungbody STRONG_OPEN J qstrong Q J
-qkurungbody STRONG_OPEN K qstrong Q K
-qkurungbody STRONG_OPEN L qstrong Q L
-qkurungbody STRONG_OPEN N qstrong Q N
-qkurungbody STRONG_OPEN S qstrong Q S
-qkurungbody STRONG_OPEN T qstrong Q T
-qkurungbody STRONG_OPEN U qstrong Q U
-qkurungbody STRONG_OPEN V qstrong Q V
-qkurungbody STRONG_OPEN W qstrong Q W
-qkurungbody STRONG_OPEN X qstrong Q X
-qkurungbody STRONG_OPEN Y qstrong Q Y
+qkurungbody STRONG_OPEN C qstrong QC
+qkurunghead STRONG_OPEN D qstronghead QD
+qkurunghead STRONG_OPEN E qstronghead QE
+qkurungbody STRONG_OPEN E qstrong QE
+qkurungbody STRONG_OPEN F qstrong QF
+qkurungbody STRONG_OPEN G qstrong QG
+qkurungbody STRONG_OPEN H qstrong QH
+qkurungbody STRONG_OPEN I qstrong QI
+qkurungbody STRONG_OPEN J qstrong QJ
+qkurungbody STRONG_OPEN K qstrong QK
+qkurungbody STRONG_OPEN L qstrong QL
+qkurungbody STRONG_OPEN N qstrong QN
+qkurungbody STRONG_OPEN S qstrong QS
+qkurungbody STRONG_OPEN T qstrong QT
+qkurungbody STRONG_OPEN U qstrong QU
+qkurungbody STRONG_OPEN V qstrong QV
+qkurungbody STRONG_OPEN W qstrong QW
+qkurungbody STRONG_OPEN X qstrong QX
+qkurungbody STRONG_OPEN Y qstrong QY
 qstrong CLASS Q qstrong Q
 qstrong ID Q qstrong Q
 qstrong STYLE Q qstrong Q
@@ -236,24 +236,24 @@ qkurungbody VAR Q qkurungbody Q
 qkurunghead VAR Q qkurunghead Q
 qkurungbody STRONG_CLOSE Q qkurungbody epsilon
 qkurunghead STRONG_CLOSE Q qkurunghead epsilon
-qkurungbody SMALL_OPEN C qsmall R C
-qkurunghead SMALL_OPEN D qsmallhead R D
-qkurunghead SMALL_OPEN E qsmallhead R E
-qkurungbody SMALL_OPEN F qsmall R F
-qkurungbody SMALL_OPEN G qsmall R G
-qkurungbody SMALL_OPEN H qsmall R H
-qkurungbody SMALL_OPEN I qsmall R I
-qkurungbody SMALL_OPEN J qsmall R J
-qkurungbody SMALL_OPEN K qsmall R K
-qkurungbody SMALL_OPEN L qsmall R L
-qkurungbody SMALL_OPEN N qsmall R N
-qkurungbody SMALL_OPEN S qsmall R S
-qkurungbody SMALL_OPEN T qsmall R T
-qkurungbody SMALL_OPEN U qsmall R U
-qkurungbody SMALL_OPEN V qsmall R V
-qkurungbody SMALL_OPEN W qsmall R W
-qkurungbody SMALL_OPEN X qsmall R X
-qkurungbody SMALL_OPEN Y qsmall R Y
+qkurungbody SMALL_OPEN C qsmall RC
+qkurunghead SMALL_OPEN D qsmallhead RD
+qkurunghead SMALL_OPEN E qsmallhead RE
+qkurungbody SMALL_OPEN F qsmall RF
+qkurungbody SMALL_OPEN G qsmall RG
+qkurungbody SMALL_OPEN H qsmall RH
+qkurungbody SMALL_OPEN I qsmall RI
+qkurungbody SMALL_OPEN J qsmall RJ
+qkurungbody SMALL_OPEN K qsmall RK
+qkurungbody SMALL_OPEN L qsmall RL
+qkurungbody SMALL_OPEN N qsmall RN
+qkurungbody SMALL_OPEN S qsmall RS
+qkurungbody SMALL_OPEN T qsmall RT
+qkurungbody SMALL_OPEN U qsmall RU
+qkurungbody SMALL_OPEN V qsmall RV
+qkurungbody SMALL_OPEN W qsmall RW
+qkurungbody SMALL_OPEN X qsmall RX
+qkurungbody SMALL_OPEN Y qsmall RY
 qsmall CLASS R qsmall R
 qsmall ID R qsmall R
 qsmall STYLE R qsmall R
@@ -266,9 +266,9 @@ qkurungbody VAR R qkurungbody R
 qkurunghead VAR R qkurunghead R
 qkurunghead SMALL_CLOSE R qkurunghead epsilon
 qkurungbody SMALL_CLOSE R qkurungbody epsilon
-qkurungbody DIV_OPEN C qdiv S C
-qkurungbody DIV_OPEN U qdiv S U
-qkurungbody DIV_OPEN S qdiv S S
+qkurungbody DIV_OPEN C qdiv SC
+qkurungbody DIV_OPEN U qdiv SU
+qkurungbody DIV_OPEN S qdiv SS
 qdiv CLASS S qdiv S
 qdiv ID S qdiv S
 qdiv STYLE S qdiv S
@@ -284,8 +284,8 @@ qa STYLE T qa T
 qa KURUNG_TUTUP T qkurungbody T
 qkurungbody VAR T qkurungbody T
 qkurungbody A_CLOSE T qkurungbody epsilon
-qkurungbody FORM_OPEN C qform U C
-qkurungbody FORM_OPEN S qform U S
+qkurungbody FORM_OPEN C qform UC
+qkurungbody FORM_OPEN S qform US
 qform ACTION U qform U
 qform METHOD U qform U
 qform CLASS U qform U
@@ -294,8 +294,8 @@ qform STYLE U qform U
 qform KURUNG_TUTUP U qkurungbody U
 qkurungbody VAR U qkurungbody U
 qkurungbody FORM_CLOSE U qkurungbody epsilon
-qkurungbody TABLE_OPEN C qtable V C
-qkurungbody TABLE_OPEN S qtable V S
+qkurungbody TABLE_OPEN C qtable VC
+qkurungbody TABLE_OPEN S qtable VS
 qtable CLASS V qtable V
 qtable ID V qtable V
 qtable STYLE V qtable V
@@ -307,22 +307,22 @@ qtr ID W qtr W
 qtr STYLE W qtr W
 qtr KURUNG_TUTUP W qkurungbody W
 qkurungbody TR_CLOSE W qkurungbody epsilon
-qkurungbody TD_OPEN V qtd X V
+qkurungbody TD_OPEN V qtd XV
 qtd CLASS X qtd X
 qtd ID X qtd X
 qtd STYLE X qtd X
 qtd KURUNG_TUTUP X qkurungbody X
 qkurungbody VAR X qkurungbody X
 qkurungbody TD_CLOSE X qkurungbody epsilon
-qkurungbody TH_OPEN V qth Y V
+qkurungbody TH_OPEN V qth YV
 qth CLASS Y qth Y
 qth ID Y qth Y
 qth STYLE Y qth Y
 qth KURUNG_TUTUP Y qkurungbody Y
 qkurungbody VAR Y qkurungbody Y
 qkurungbody TH_CLOSE Y qkurungbody epsilon
-qkurungbody LINK C qlink p a C
-qkurungbody LINK S qlink p a S
+qkurungbody LINK C qlink paC
+qkurungbody LINK S qlink paS
 qlink REL p qlink epsilon
 qlink HREF a qlink a
 qlink HREF p qlink p
@@ -333,54 +333,54 @@ qlink ID p qlink p
 qlink STYLE a qlink a
 qlink STYLE p qlink p
 qlink KURUNG_TUTUP a qkurungbody epsilon
-qkurungbody BR C qbr b C
-qkurunghead BR D qbr b D
-qkurunghead BR E qbr b E
-qkurungbody BR E qbr b E
-qkurungbody BR F qbr b F
-qkurungbody BR G qbr b G
-qkurungbody BR H qbr b H
-qkurungbody BR I qbr b I
-qkurungbody BR J qbr b J
-qkurungbody BR K qbr b K
-qkurungbody BR L qbr b L
-qkurungbody BR N qbr b N
-qkurungbody BR S qbr b S
-qkurungbody BR T qbr b T
-qkurungbody BR U qbr b U
-qkurungbody BR V qbr b V
-qkurungbody BR W qbr b W
-qkurungbody BR X qbr b X
-qkurungbody BR Y qbr b Y
+qkurungbody BR C qbr bC
+qkurunghead BR D qbr bD
+qkurunghead BR E qbr bE
+qkurungbody BR E qbr bE
+qkurungbody BR F qbr bF
+qkurungbody BR G qbr bG
+qkurungbody BR H qbr bH
+qkurungbody BR I qbr bI
+qkurungbody BR J qbr bJ
+qkurungbody BR K qbr bK
+qkurungbody BR L qbr bL
+qkurungbody BR N qbr bN
+qkurungbody BR S qbr bS
+qkurungbody BR T qbr bT
+qkurungbody BR U qbr bU
+qkurungbody BR V qbr bV
+qkurungbody BR W qbr bW
+qkurungbody BR X qbr bX
+qkurungbody BR Y qbr bY
 qbr CLASS b qbr b
 qbr ID b qbr b
 qbr STYLE b qbr b
 qbr KURUNG_TUTUP b qkurungbody epsilon
-qkurungbody HR C qhr c C
-qkurunghead HR D qhr c D
-qkurunghead HR E qhr c E
-qkurungbody HR E qhr c E
-qkurungbody HR F qhr c F
-qkurungbody HR G qhr c G
-qkurungbody HR H qhr c H
-qkurungbody HR I qhr c I
-qkurungbody HR J qhr c J
-qkurungbody HR K qhr c K
-qkurungbody HR L qhr c L
-qkurungbody HR N qhr c N
-qkurungbody HR S qhr c S
-qkurungbody HR T qhr c T
-qkurungbody HR U qhr c U
-qkurungbody HR V qhr c V
-qkurungbody HR W qhr c W
-qkurungbody HR X qhr c X
-qkurungbody HR Y qhr c Y
+qkurungbody HR C qhr cC
+qkurunghead HR D qhr cD
+qkurunghead HR E qhr cE
+qkurungbody HR E qhr cE
+qkurungbody HR F qhr cF
+qkurungbody HR G qhr cG
+qkurungbody HR H qhr cH
+qkurungbody HR I qhr cI
+qkurungbody HR J qhr cJ
+qkurungbody HR K qhr cK
+qkurungbody HR L qhr cL
+qkurungbody HR N qhr cN
+qkurungbody HR S qhr cS
+qkurungbody HR T qhr cT
+qkurungbody HR U qhr cU
+qkurungbody HR V qhr cV
+qkurungbody HR W qhr cW
+qkurungbody HR X qhr cX
+qkurungbody HR Y qhr cY
 qhr CLASS c qhr c
 qhr ID c qhr c
 qhr STYLE c qhr c
 qhr KURUNG_TUTUP c qkurungbody epsilon
-qkurungbody IMG C qimg q d C
-qkurungbody IMG S qimg q d S
+qkurungbody IMG C qimg qdC
+qkurungbody IMG S qimg qdS
 qimg SRC q qimg epsilon
 qimg ALT d qimg d
 qimg ALT q qimg q
@@ -391,9 +391,9 @@ qimg ID q qimg q
 qimg STYLE d qimg d
 qimg STYLE q qimg q
 qimg KURUNG_TUTUP d qkurungbody epsilon
-qkurungbody INPUT C qinput e C
-qkurungbody INPUT S qinput e S
-qkurungbody INPUT U qinput e U
+qkurungbody INPUT C qinput eC
+qkurungbody INPUT S qinput eS
+qkurungbody INPUT U qinput eU
 qinput TYPE_INPUT e qinput e
 qinput CLASS e qinput e
 qinput ID e qinput e
