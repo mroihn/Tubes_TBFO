@@ -22,15 +22,21 @@ class PDA:
         currentState = self.initial_state
         self.stack.append(currentStackSymbol)
         for symbol in inputString:
+            # print(symbol)
+            self.cek = False
             for transition in self.transitions:
                 if ((transition[0] == currentState) and (transition[1] == symbol) and (transition[2] == currentStackSymbol)):
+                    # print('{} {} {} {} {} {} {}'.format(transition[0],currentState,transition[1],symbol,transition[2],currentStackSymbol,transition[3]))
                     currentState = transition[3]
-                    print(symbol)
+                    # print(symbol)
                     self.stack.pop()
                     if(transition[4] !='epsilon'):
                         for el in transition[4][::-1]:
                             self.stack.append(el)
                     currentStackSymbol = self.stack[len(self.stack)-1]
+                    self.cek = True
+            if(self.cek == False):
+                return False
 
         if(currentStackSymbol == self.initial_stack_symbol):
             print('String accepted by PDA.')
