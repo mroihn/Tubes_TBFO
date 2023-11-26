@@ -27,3 +27,6 @@ Tugas Besar Teori Bahasa Formal dan Automata - Kelompok kosongin dulu (K-3)
 1. Buka terminal atau CMD lalu masukkan `git clone https://github.com/mroihn/Tubes_TBFO.git`
 2. Masukkan file testing di direktori test
 3. Jalankan program dengan perintah `python PDA.py PDA.txt ./test/<nama file>`
+
+## Diagram Transisi
+https://app.diagrams.net/#G123KgYKACz9E_MSSxy9ZaQ1p-8ydImuDh
