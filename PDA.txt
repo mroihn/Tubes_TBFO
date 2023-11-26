@@ -275,8 +275,8 @@ qdiv STYLE S qdiv S
 qdiv KURUNG_TUTUP S qkurungbody S
 qkurungbody VAR S qkurungbody S
 qkurungbody DIV_CLOSE S qkurungbody epsilon
-qkurungbody A_OPEN C qa T C
-qkurungbody A_OPEN S qa T S
+qkurungbody A_OPEN C qa TC
+qkurungbody A_OPEN S qa TS
 qa HREF T qa T
 qa CLASS T qa T
 qa ID T qa T
@@ -301,7 +301,7 @@ qtable ID V qtable V
 qtable STYLE V qtable V
 qtable KURUNG_TUTUP V qkurungbody V
 qkurungbody TABLE_CLOSE V qkurungbody epsilon
-qkurungbody TR_OPEN V qtr W V
+qkurungbody TR_OPEN V qtr WV
 qtr CLASS W qtr W
 qtr ID W qtr W
 qtr STYLE W qtr W

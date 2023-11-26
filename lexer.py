@@ -1,4 +1,3 @@
-import os
 import sys
 import re
 
@@ -17,19 +16,16 @@ def lex(text, token_rules):
 
             regex = re.compile(pattern)
             flag = regex.match(text,pos)
-            # print(flag)
 
             if flag:
-                print(flag)
-                print(tag)
                 if tag:
                     token = tag
                     tokens.append(token)
                 break
 
         if not flag:
-            print("SYNTAX ERROR !!!")
-            print(f'Error Expression at line {line}: {text[pos:].splitlines()[0]}')
+            print("\033[91mSYNTAX ERROR !!!\033[0m")
+            print(f'\033[93mError Expression at line {line}: {text[pos:].splitlines()[0]}\033[0m')
             sys.exit(1)
         else:
             pos = flag.end(0)
@@ -40,51 +36,9 @@ token_rules = [
 
     # Not Token
     (r'[\s]+', None),
-    (r'//.*', None),
-    (r'/\*(.|\n)*?\*/', None),
-    # (r'[\n]+[ \t]*\'\'\'[(?!(\'\'\'))\w\W]*\'\'\'',  None),
-    # (r'<!--([\s\S]*?)-->',  None),
-
-    # OPERATOR
-    # (r'===', 'EQUAL_OPERATOR'),
-    # (r'==', 'EQUAL_TO_OPERATOR'),
-    # (r'!==', 'NOT_EQUAL_OPERATOR'),
-    # (r'!=', 'NOT_EQUAL_TO_OPERATOR'),
-    # (r'&&', 'AND'),
-    # (r'\|\|', 'OR'),
-    # (r'!', 'NOT'),
-    # (r'\+=', 'SUMPLUS'),
-    # (r'\-=', 'SUMMIN'),
-    # (r'\/=', 'SUMDIV'),
-    # (r'\*=', 'SUMMULT'),
-    # (r'<=', 'LEQ'),
-    # (r'>=', 'GEQ'),
-    # (r'=', 'ASSIGN'),
-    # (r'%', 'MODULO'),
-    # (r'\,', 'KOMA'),
-    # (r'\;', 'TITIK_KOMA'),
-    # (r'\:', 'TITIK_DUA'),
-    # (r'\{', 'KURUNG_KURAWAL_BUKA'),
-    # (r'\}', 'KURUNG_KURAWAL_TUTUP'),
-    # (r'\(', 'KURUNG_BUKA'),
-    # (r'\)', 'KURUNG_TUTUP'),
-    # (r'\[', 'OPEN_BRACKET'),
-    # (r'\]', 'CLOSE_BRACKET'),
     (r'\n', 'ENTER'),
-    # (r'\+', 'PLUS'),
-    # (r'\-', 'MINUS'),
-    # (r'\/', 'GARIS_MIRING'),
-    # (r'\*', 'MULT'),
-    # (r'\.', 'DOT'),
     
-    # # Type
-    # (r'[0-9]*\.[0-9]+',  "INT"),
-    # (r'[0-9][0-9]+',     "INT"),
-    # (r'[0-9]',           "INT"),
-    # (r'\"[^\"\n]*\"',           "STRING"),
-    # (r'\'[^\'\n]*\'',           "STRING"),
-    # (r'\bconst\b',              "VAR"),
-    # (r'\bvar\b',                "VAR"),
+
 
     # KEYWORDS
     (r'<!--([\s\S]*?)-->', 'KOMEN'),
@@ -160,12 +114,7 @@ token_rules = [
     #Untuk Variabel
     (r'[^<]+', 'VAR'),
 ]
-# file_path = "input_symbol.txt"
 
-# # Write the transitions to a text file
-# with open(file_path, 'w') as file:
-#     for token in token_rules:
-#         file.write(f"{token[1]} ")
 
 
 def createToken(text):
@@ -180,14 +129,4 @@ def createToken(text):
     for token in tokens:
         tokenResult.append(token)
 
-    #Write file
-    path = os.getcwd()
-    fileWrite = open(path + "./tokenResult.txt", 'w')
-    for token in tokenResult:
-        fileWrite.write(str(token)+" \n")
-        # print(token)
-    fileWrite.close()
-
     return tokenResult
-
-# createToken('tes.html')
