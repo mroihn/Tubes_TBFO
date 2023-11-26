@@ -160,6 +160,13 @@ token_rules = [
     #Untuk Variabel
     (r'[^<]+', 'VAR'),
 ]
+# file_path = "input_symbol.txt"
+
+# # Write the transitions to a text file
+# with open(file_path, 'w') as file:
+#     for token in token_rules:
+#         file.write(f"{token[1]} ")
+
 
 def createToken(text):
     # Read file
